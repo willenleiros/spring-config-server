@@ -1,0 +1,15 @@
+server:
+  port: 8888
+spring:
+  config:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitlab.com/willenleiros/config-repo.git
+          username: willenleiros@gmail.com
+          password: "@ninocafe0371"
+          basedir: /Users/willenrodrigodeleiros/projetos/estudos/git-config-server
+          delete-untracked-branches: true
+          defaultLabel: main
