@@ -7,9 +7,5 @@ spring:
     config:
       server:
         git:
-          uri: https://gitlab.com/willenleiros/config-repo.git
-          username: email
-          password: senha
-          basedir: ~/tmp
           delete-untracked-branches: true
           defaultLabel: main
