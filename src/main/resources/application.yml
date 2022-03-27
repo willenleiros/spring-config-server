@@ -8,8 +8,8 @@ spring:
       server:
         git:
           uri: https://gitlab.com/willenleiros/config-repo.git
-          username: willenleiros@gmail.com
-          password: "@ninocafe0371"
-          basedir: /Users/willenrodrigodeleiros/projetos/estudos/git-config-server
+          username: email
+          password: senha
+          basedir: ~/tmp
           delete-untracked-branches: true
           defaultLabel: main
