@@ -1,0 +1,20 @@
+server:
+  port: 8888
+spring:
+  application:
+    name: configserver
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://gitlab.com/willenleiros/config-repo.git
+          username: $SPRING_CLOUD_CONFIG_SERVER_GIT_USERNAME
+          password: $SPRING_CLOUD_CONFIG_SERVER_GIT_PASSWORD
+          basedir: $SPRING_CLOUD_CONFIG_SERVER_GIT_BASEDIR
+          default-label: main
+          clone-on-start: true
+          delete-untracked-branches: true
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka:8761/eureka/
